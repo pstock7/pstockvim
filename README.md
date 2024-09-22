@@ -1,4 +1,4 @@
-# 💤 LazyVim
+#  PstockVim
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+A configuration for me, myself, and I with 💤 [LazyVim](https://github.com/LazyVim/LazyVim) as the starting point.
+Refer to LazyVim's [documentation](https://lazyvim.github.io/installation) for details.
