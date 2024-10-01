@@ -62,6 +62,13 @@ return {
     },
   },
 
+  {
+    "rcarriga/nvim-notify",
+    opts = {
+      timeout = 7000,
+    },
+  },
+
   -- add more treesitter parsers
   {
     "nvim-treesitter/nvim-treesitter",
