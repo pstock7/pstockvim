@@ -3,9 +3,9 @@
 A configuration for me, myself, and I with [LazyVim](https://github.com/LazyVim/LazyVim)💤 as the starting point.
 Refer to LazyVim's [documentation](https://lazyvim.github.io/installation) for configuration details and other info.
 
-## Dependencies found so far
+## Dependencies
 
-- A C compiler of some kind (like `gcc` for example)
+- All the [dependencies for LazyVim](https://www.lazyvim.org/#%EF%B8%8F-requirements)
 - npm (Mason needs it I think)
 
 ## Installation
