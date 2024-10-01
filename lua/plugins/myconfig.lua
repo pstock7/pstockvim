@@ -108,6 +108,11 @@ return {
       formatters_by_ft = {
         python = { "autopep8" },
       },
+      formatters = {
+        autopep8 = {
+          prepend_args = { "--max-line-length", "120" },
+        },
+      },
     },
   },
   -- add flake8 to nvim-lint which handles linters
@@ -116,6 +121,11 @@ return {
     opts = {
       linters_by_ft = {
         python = { "flake8" },
+      },
+      linters = {
+        flake8 = {
+          args = { "--extend-ignore", "E501" },
+        },
       },
     },
   },
