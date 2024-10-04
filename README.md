@@ -6,7 +6,7 @@ Refer to LazyVim's [documentation](https://lazyvim.github.io/installation) for c
 ## Dependencies
 
 - All the [dependencies for LazyVim](https://www.lazyvim.org/#%EF%B8%8F-requirements)
-- [node.js/npm](https://nodejs.org/en/download/package-manager) (Mason needs it I think)
+- [node.js and npm](https://nodejs.org/en/download/package-manager) (Mason needs it I think)
 - [win32yank](https://github.com/equalsraf/win32yank) if using in WSL (can install with winget)
 
 ## Installation
