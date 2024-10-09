@@ -1,6 +1,7 @@
 # PstockVim
 
-A configuration for me, myself, and I with [LazyVim](https://github.com/LazyVim/LazyVim)💤 as the starting point.
+A configuration for me, myself, and I using [LazyVim](https://github.com/LazyVim/LazyVim)💤
+
 Refer to LazyVim's [documentation](https://lazyvim.github.io/installation) for configuration details and other info.
 
 ## Dependencies
