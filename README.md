@@ -10,6 +10,7 @@ Refer to LazyVim's [documentation](https://lazyvim.github.io/installation) for c
 - [node.js and npm](https://nodejs.org/en/download/package-manager) (Mason needs it I think)
 - [win32yank](https://github.com/equalsraf/win32yank) if using in WSL (can install with winget)
 - python-venv for flake8 and autopep8
+- cargo from installing [Rust](https://www.rust-lang.org/tools/install)
 
 ## Installation
 
