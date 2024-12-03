@@ -8,8 +8,6 @@ return {
         "shellcheck",
         "shfmt",
         "autopep8",
-        "flake8",
-        "pyright",
       },
     },
   },
