@@ -28,6 +28,9 @@ return {
       notifier = {
         timeout = 5000,
       },
+      explorer = {
+        replace_netrw = true,
+      },
     },
   },
 }
