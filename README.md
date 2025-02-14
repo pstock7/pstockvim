@@ -13,6 +13,7 @@ Refer to LazyVim's [documentation](https://lazyvim.github.io/installation) for c
 - `cargo` from installing [Rust](https://www.rust-lang.org/tools/install)
 - `rust-analyzer` from rustup: `rustup component add rust-analyzer`
 - `sqlite3` for snacks_explorer
+- `latexmk` and `tree-sitter-cli` for LaTeX
 
 ## Installation
 
