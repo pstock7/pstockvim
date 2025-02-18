@@ -1,5 +1,6 @@
 return {
   "saghen/blink.cmp",
+  dependencies = { "L3MON4D3/LuaSnip", version = "v2.*" },
   opts = {
     enabled = function()
       return not vim.tbl_contains({ "tex", "markdown" }, vim.bo.filetype)
@@ -13,6 +14,9 @@ return {
     },
     appearance = {
       nerd_font_variant = "normal",
+    },
+    snippets = {
+      preset = "luasnip",
     },
   },
 }
