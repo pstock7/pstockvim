@@ -31,6 +31,13 @@ return {
       explorer = {
         replace_netrw = true,
       },
+      zen = {
+        win = {
+          backdrop = {
+            transparent = false,
+          },
+        },
+      },
     },
   },
 }
