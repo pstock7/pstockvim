@@ -14,6 +14,7 @@ Refer to LazyVim's [documentation](https://lazyvim.github.io/installation) for c
 - `rust-analyzer` from rustup: `rustup component add rust-analyzer`
 - `sqlite3` for snacks_explorer
 - `latexmk` and `tree-sitter-cli` for LaTeX
+- `python-pylatexenc` for LaTeX in Markdown documents
 
 ## Installation
 
