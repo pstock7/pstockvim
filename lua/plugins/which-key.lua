@@ -5,8 +5,8 @@ return {
     opts = {
       icons = {
         keys = {
-          C = "Ctrl ",
-          M = "Alt ",
+          C = "C-",
+          M = "A-",
         },
       },
     },
