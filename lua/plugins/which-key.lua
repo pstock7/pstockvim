@@ -9,6 +9,12 @@ return {
           M = "A-",
         },
       },
+      spec = {
+        {
+          mode = "n",
+          { "<leader>v", group = "diffview" },
+        },
+      },
     },
   },
 }

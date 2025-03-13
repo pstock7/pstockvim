@@ -8,13 +8,8 @@ map({ "n", "x" }, "<localleader>h", "H", { noremap = true, desc = "Top line of w
 map({ "n", "x" }, "<localleader>l", "L", { noremap = true, desc = "Bottom line of window" })
 
 -- Add a keymap to toggle diffview
-vim.keymap.set("n", "<leader>gD", function()
-  if next(require("diffview.lib").views) == nil then
-    vim.cmd("DiffviewOpen")
-  else
-    vim.cmd("DiffviewClose")
-  end
-end, { desc = "Toggle diffview" })
+vim.keymap.set("n", "<leader>vd", "<cmd>DiffviewOpen<cr>", { desc = "Open diff view" })
+vim.keymap.set("n", "<leader>vf", "<cmd>DiffviewFileHistory<cr>", { desc = "Open file history" })
 
 -- Set luasnip to intercept <Tab> and <S-Tab>
 -- This is apparently the officially endorsed method
