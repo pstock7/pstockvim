@@ -5,6 +5,8 @@ return {
     opts = {
       ensure_installed = {
         "bash",
+        "c",
+        "cpp",
         "html",
         "javascript",
         "json",
@@ -14,11 +16,9 @@ return {
         "python",
         "query",
         "regex",
+        "rust",
         "vim",
         "yaml",
-        "rust",
-        "cpp",
-        "c",
       },
       auto_install = true,
     },
