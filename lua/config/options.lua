@@ -9,3 +9,5 @@
 --   3. mini.icons will show the dockerfile filetype icon for these files
 --   ...and possibly more which I haven't noticed and hopefully won't have to
 vim.filetype.add({ pattern = { ["Dockerfile.*"] = "dockerfile" } })
+
+vim.opt.shell = "bash"
