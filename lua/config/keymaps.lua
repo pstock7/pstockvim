@@ -11,6 +11,10 @@ map({ "n", "x" }, "<localleader>l", "L", { noremap = true, desc = "Bottom line o
 vim.keymap.set("n", "<leader>vd", "<cmd>DiffviewOpen<cr>", { desc = "Open diff view" })
 vim.keymap.set("n", "<leader>vf", "<cmd>DiffviewFileHistory<cr>", { desc = "Open file history" })
 
+-- Add keymaps for CodeCompanion
+vim.keymap.set("n", "<leader>aa", "<cmd>CodeCompanionActions<cr>", { desc = "Open CodeCompanion actions" })
+vim.keymap.set("n", "<leader>ac", "<cmd>CodeCompanionChat Toggle<cr>", { desc = "Toggle CodeCompanion chat" })
+
 -- Set luasnip to intercept <Tab> and <S-Tab>
 -- This is apparently the officially endorsed method
 vim.cmd([[

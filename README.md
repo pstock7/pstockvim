@@ -20,6 +20,7 @@ The meaning of optional here is sort of fuzzy, but these are more optional than 
 - [win32yank](https://github.com/equalsraf/win32yank) if using in WSL (can install with winget)
 - `sqlite3` for snacks_explorer
 - `python3-pylatexenc` for LaTeX in Markdown documents
+- `ollama` for CodeCompanion AI completion
 
 ## Installation
 
