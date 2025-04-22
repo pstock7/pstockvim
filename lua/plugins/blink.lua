@@ -3,7 +3,7 @@ return {
   dependencies = { "L3MON4D3/LuaSnip", version = "v2.*" },
   opts = {
     enabled = function()
-      return not vim.tbl_contains({ "tex", "markdown" }, vim.bo.filetype)
+      return not vim.tbl_contains({ "tex" }, vim.bo.filetype)
         and vim.bo.buftype ~= "prompt"
         and vim.b.completion ~= false
     end,
