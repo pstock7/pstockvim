@@ -10,4 +10,9 @@
 --   ...and possibly more which I haven't noticed and hopefully won't have to
 vim.filetype.add({ pattern = { ["Dockerfile.*"] = "dockerfile" } })
 
+-- Make bash the default shell
+-- This helps if the default shell for a given system is not bash
 vim.opt.shell = "bash"
+
+-- Do not attempt to restore view when moving through jumplist, changelist, alternate-file, or marks
+vim.opt.jumpoptions:remove("view")
