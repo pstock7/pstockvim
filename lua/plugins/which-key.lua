@@ -13,7 +13,6 @@ return {
         {
           mode = "n",
           { "<leader>v", group = "diffview" },
-          { "<leader>a", group = "ai" },
         },
       },
     },
