@@ -7,6 +7,7 @@ Refer to [LazyVim's documentation](https://lazyvim.github.io/installation) for c
 ## Dependencies
 
 - All the [dependencies for LazyVim](https://www.lazyvim.org/#%EF%B8%8F-requirements)
+- [GNU Make](https://www.gnu.org/software/make/)
 - [node.js and npm](https://nodejs.org/en/download/package-manager) (Mason needs it I think)
 - `cargo` from installing [Rust](https://www.rust-lang.org/tools/install)
 - `python-venv` for `autopep8` and `ruff` if using Python
