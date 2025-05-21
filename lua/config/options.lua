@@ -16,3 +16,6 @@ vim.opt.shell = "bash"
 
 -- Do not attempt to restore view when moving through jumplist, changelist, alternate-file, or marks
 vim.opt.jumpoptions:remove("view")
+
+-- Set the default textwidth to be 120 characters which affects a few things (see `:h textwidth` and friends)
+vim.opt.textwidth = 120
