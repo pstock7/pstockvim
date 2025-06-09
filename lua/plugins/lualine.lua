@@ -4,6 +4,13 @@ return {
     opts.options.component_separators = { left = "", right = "" }
     opts.options.section_separators = { left = "", right = "" }
 
+    -- Change date to use non-military time
+    opts.sections.lualine_z = {
+      function()
+        return os.date("%-I:%M %p") -- The original format string was "%R"
+      end,
+    }
+
     -- Keep the default values from LazyVim, but change the separators.
     local separators = { left = "", right = "" }
     for _, section in ipairs({ "lualine_a", "lualine_z" }) do
