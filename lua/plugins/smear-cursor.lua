@@ -17,8 +17,9 @@ return {
     volume_reduction_exponent = 0.2,
     -- Seems to help me not lose track visually of the character being jumped to (default: false)
     never_draw_over_target = true,
-    -- Do not anticipate movements by adding extra smear outside
-    -- of the line between points a and b (default: 0.55)
+    -- Do not anticipate or dampen movements by adding extra smear outside
+    -- of the line between points a and b
     anticipation = 0,
+    damping = 0.99,
   },
 }
