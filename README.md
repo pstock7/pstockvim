@@ -10,9 +10,6 @@ Refer to [LazyVim's documentation](https://lazyvim.github.io/installation) for c
 - [GNU Make](https://www.gnu.org/software/make/)
 - [node.js and npm](https://nodejs.org/en/download/package-manager) (Mason needs it I think)
 - `cargo` from installing [Rust](https://www.rust-lang.org/tools/install)
-- `python-venv` for `autopep8` and `ruff` if using Python
-- `rust-analyzer` from rustup: `rustup component add rust-analyzer` if using Rust
-- `latexmk` and `tree-sitter-cli` if using LaTeX
 
 ### Optional
 
@@ -20,7 +17,15 @@ The meaning of optional here is sort of fuzzy, but these are more optional than 
 
 - [win32yank](https://github.com/equalsraf/win32yank) if using in WSL (can install with winget)
 - `sqlite3` for snacks_explorer
+- `python-venv` for `autopep8` and `ruff` if using Python
+- [`rust-analyzer`](https://rust-analyzer.github.io/book/installation.html) from rustup: `rustup component add rust-analyzer` if using Rust
+- `latexmk` and `tree-sitter-cli` if using LaTeX
 - `python3-pylatexenc` for LaTeX in Markdown documents
+
+### LSPs
+
+If installing on NixOS, check for LSPs on <https://search.nixos.org/packages>
+and make sure Mason is disabled correctly.
 
 ## Installation
 
