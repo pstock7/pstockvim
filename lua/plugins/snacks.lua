@@ -24,10 +24,6 @@ return {
           { section = "startup" },
         },
       },
-      -- Change notification timeout from 3 seconds to 5 seconds
-      notifier = {
-        timeout = 5000,
-      },
       explorer = {
         replace_netrw = true,
       },
