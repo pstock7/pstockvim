@@ -2,7 +2,7 @@ return {
   "folke/todo-comments.nvim",
   opts = {
     keywords = {
-      TODO = { alt = { "REVIEW" } },
+      REVIEW = { icon = "", color = "info" },
     },
   },
 }
