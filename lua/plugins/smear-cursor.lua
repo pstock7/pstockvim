@@ -4,9 +4,9 @@ return {
     -- Pretty sure Nerd Fonts supports legacy computing symbols (default: false)
     legacy_computing_symbols_support = true,
     -- Reduce speed of head of smear (default: 0.6)
-    stiffness = 0.4,
-    -- Reduce speed of tail of smear (default: 0.4)
-    trailing_stiffness = 0.2,
+    -- stiffness = 0.4,
+    -- Reduce speed of tail of smear (default: 0.45)
+    trailing_stiffness = 0.3,
     -- Increase the stop animating distance to prevent weird animating
     -- when smearing over short distances (default: 0.1)
     distance_stop_animating = 0.5,
@@ -17,9 +17,5 @@ return {
     volume_reduction_exponent = 0.2,
     -- Seems to help me not lose track visually of the character being jumped to (default: false)
     never_draw_over_target = true,
-    -- Do not anticipate or dampen movements by adding extra smear outside
-    -- of the line between points a and b
-    anticipation = 0,
-    damping = 0.99,
   },
 }
