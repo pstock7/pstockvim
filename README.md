@@ -19,7 +19,7 @@ The meaning of optional here is sort of fuzzy, but these are more optional than 
 - `sqlite3` for snacks_explorer
 - `python-venv` for `autopep8` and `ruff` if using Python
 - [`rust-analyzer`](https://rust-analyzer.github.io/book/installation.html) from rustup: `rustup component add rust-analyzer` if using Rust
-- `latexmk` and `tree-sitter-cli` if using LaTeX
+- `latexmk` if using LaTeX
 - `python3-pylatexenc` for LaTeX in Markdown documents
 
 ### LSPs
