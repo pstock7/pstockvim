@@ -19,3 +19,13 @@ vim.opt.jumpoptions:remove("view")
 
 -- Set the default textwidth to be 120 characters which affects a few things (see `:h textwidth` and friends)
 vim.opt.textwidth = 120
+
+-- Check if we are in NixOS to change various things in our configuration
+-- WARN: This will likely fail in Windows
+local fd_os_release = assert(io.open("/etc/os-release"), "r")
+local s_os_release = fd_os_release:read("*a")
+fd_os_release:close()
+s_os_release = s_os_release:lower()
+local is_nixos = s_os_release:match("nixos")
+-- Set a global variable we can use throughout our neovim configuration
+vim.g.is_nixos = is_nixos ~= nil
