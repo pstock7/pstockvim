@@ -3,13 +3,46 @@
 -- Add any additional keymaps here
 local map = vim.keymap.set
 
+-- To see what modes are available see :h map-listing
+
 -- Since H and L are for switching buffers, define new keymaps for their original vim functionality
 map({ "n", "x" }, "<localleader>h", "H", { noremap = true, desc = "Top line of window" })
 map({ "n", "x" }, "<localleader>l", "L", { noremap = true, desc = "Bottom line of window" })
 
 -- Add a keymap to toggle diffview
-vim.keymap.set("n", "<leader>vd", "<cmd>DiffviewOpen<cr>", { desc = "Open diff view" })
-vim.keymap.set("n", "<leader>vf", "<cmd>DiffviewFileHistory<cr>", { desc = "Open file history" })
+map("n", "<leader>vd", "<cmd>DiffviewOpen<cr>", { desc = "Open diff view" })
+map("n", "<leader>vf", "<cmd>DiffviewFileHistory<cr>", { desc = "Open file history" })
+
+-- Add a keymap to toggle scrolloff to 999 which will keep the cursor in the center of the screen
+-- We use Snacks.toggle to take advantage of folke's messages and pretty which-key icons
+local function get_global_scrolloff()
+  return vim.api.nvim_get_option_value("scrolloff", { scope = "global" })
+end
+
+local previous_scrolloff = get_global_scrolloff()
+
+Snacks.toggle({
+  id = "scrolloff_999",
+  name = "set scrolloff=999",
+
+  get = function()
+    return get_global_scrolloff() == 999
+  end,
+
+  set = function(state)
+    if state then
+      previous_scrolloff = get_global_scrolloff()
+      vim.api.nvim_set_option_value("scrolloff", 999, { scope = "global" })
+    else
+      vim.api.nvim_set_option_value(
+        "scrolloff",
+        previous_scrolloff,
+        { scope = "global" }
+      )
+    end
+  end,
+}):map("<leader>uo")
+
 
 -- Set luasnip to intercept <Tab> and <S-Tab>
 -- This is apparently the officially endorsed method
