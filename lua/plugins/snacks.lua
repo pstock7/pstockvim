@@ -1,6 +1,45 @@
 return {
   {
     "folke/snacks.nvim",
+    config = function(_, opts)
+      require("snacks").setup(opts)
+
+      local function get_scrolloff()
+        return vim.api.nvim_get_option_value("scrolloff", {
+          scope = "global",
+        })
+      end
+
+      local function set_scrolloff(value)
+        -- Set the global value used by new windows.
+        vim.api.nvim_set_option_value("scrolloff", value, {
+          scope = "global",
+        })
+
+        -- scrolloff is global-local, so update existing windows too.
+        for _, win in ipairs(vim.api.nvim_list_wins()) do
+          if vim.api.nvim_win_is_valid(win) then
+            vim.api.nvim_set_option_value("scrolloff", value, {
+              scope = "local",
+              win = win,
+            })
+          end
+        end
+      end
+
+      Snacks.toggle({
+        id = "scrolloff_999",
+        name = "set scrolloff=999",
+
+        get = function()
+          return get_scrolloff() == 999
+        end,
+
+        set = function(state)
+          set_scrolloff(state and 999 or 4)
+        end,
+      }):map("<leader>uo")
+    end,
     opts = {
       -- Add my own logo :)
       dashboard = {
